@@ -7,11 +7,11 @@ if __name__ == "__main__":
         assert len(row) == columns
         array.append(row)
     summ = 0
-    for i in array:
-        summ += sum(i)
-        for a in i:
+    for j in array:
+        summ += sum(j)
+        for a in j:
             if a < 0:
-                summ -= sum(i)
+                summ -= sum(j)
                 break
     print(summ)
  
@@ -19,10 +19,10 @@ if __name__ == "__main__":
     for i in range(rows):
         m += array[i][i]
     for i in range(rows):
-        d1=0
-        d2=0
-        if d1<m:
-            m=d1
-        if d2<m:
-            m=d2
+        g1=0
+        g2=0
+        if g1<m:
+            m=g1
+        if g2<m:
+            m=g2
     print(m)
